@@ -9,6 +9,8 @@ score and a written explanation. FastAPI web app + CLI. Runs fully offline
     python -m pytest tests/ -q                     # must stay green (297 tests)
     python regression.py                           # 10 emails, 5 acceptance criteria
     python evaluate.py corpus/eval50 --no-llm      # 50 labelled emails, confusion matrix
+    # corpus/blind10 is regression.py's acceptance set (same 10 emails, thresholds
+    # tuned to them), NOT a held-out evaluation set — never cite its accuracy as a metric.
     python main.py samples/01-phishing-credential-harvest.eml -v   # see the reasoning
     python app.py                                  # http://127.0.0.1:8000  (Vani / Vani)
 
@@ -53,6 +55,14 @@ in body count as payment instruction; corpus dates fixed + guard test.
 5. The LLM/agent layer has never been measured here: get a free Groq key, run
    evaluate.py with and without --no-llm, and record whether it changes any verdict.
 6. Replace datetime.utcnow() (deprecation warnings in db.py / models.py).
+7. URL_BRAND_CONSISTENT ("Links resolve to X's own domain", urls_check.py) can credit a
+   phantom link: html_to_text flattens an anchor to its display text, and when that text
+   is itself a URL, extract_links_from_text re-harvests it as a real link. A message
+   linking <a href="evil.top">https://paypal.com/signin</a> therefore carries a paypal.com
+   link nobody can click. Harmless today (INFO-weighted, and design rule 3 suppresses trust
+   credits once a theft vector fires) but it would grant a false trust credit on a
+   genuine-looking email where no theft vector fires. Note the phantom is in email.links
+   itself, so any future rule iterating links inherits it.
 
 ## Safety
 Default login Vani/Vani is only safe on 127.0.0.1. Never commit .env or data/.
