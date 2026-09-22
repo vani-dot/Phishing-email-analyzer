@@ -1,0 +1,19 @@
+Return-Path: <notifications@circleci.com>
+Received: from mx1.circleci.com (mx1.circleci.com [203.0.113.2]) by mx.company.com with ESMTPS id x2; Mon, 14 Sep 2026 09:02:00 +0000
+Received: from app.circleci.com by mx1.circleci.com; Mon, 14 Sep 2026 09:02:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=circleci.com; dkim=pass header.d=circleci.com; dmarc=pass header.from=circleci.com
+From: "CircleCI" <builds@circleci.com>
+To: jaswanth@company.com
+Subject: Failed: vanitha/phish-analyzer (main) build #1182
+Date: Mon, 14 Sep 2026 13:22:41 +0000
+Message-ID: <build.1182@circleci.com>
+Content-Type: text/plain; charset=utf-8
+
+Build #1182 of vanitha/phish-analyzer (main) FAILED after 2m 14s.
+
+  tests/test_scoring.py::test_urgency_alone_cannot_reach_suspicious FAILED
+  1 failed, 267 passed
+
+Triggered by: jaswanth (commit 8f2a1b9 "cap urgency as a group")
+
+https://circleci.com/gh/vanitha/phish-analyzer/1182

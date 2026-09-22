@@ -1,0 +1,19 @@
+Return-Path: <refunds@incometax-refund-gov.in>
+Received: from incometax-refund-gov.in ([103.21.58.200]) by mx.company.com with ESMTP id i9; Thu, 10 Sep 2026 06:00:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=incometax-refund-gov.in; dkim=none; dmarc=fail
+From: "Income Tax Department" <refunds@incometax-refund-gov.in>
+To: jaswanth@company.com
+Subject: Your income tax refund of Rs 18,450 is pending
+Date: Thu, 10 Sep 2026 06:00:00 +0000
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Dear Taxpayer,</p>
+<p>After the final assessment of your return for AY 2026-27, a refund of
+Rs 18,450 has been approved.</p>
+<p>The refund could not be credited because your bank details are outdated.
+Update them within 7 days or the refund will lapse.</p>
+<p><a href="http://incometax-refund-gov.in/refund/update">Update bank details</a></p>
+<p>You will need your PAN, account number, IFSC and net banking credentials.</p>
+<p>Income Tax Department, Government of India</p>
+</body></html>

@@ -1,0 +1,23 @@
+Return-Path: <tyler@scalegrid-outbound.io>
+Received: from mail.scalegrid-outbound.io ([159.89.44.30]) by mx.company.com with ESMTPS id s1; Mon, 14 Sep 2026 09:00:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=scalegrid-outbound.io; dkim=pass header.d=scalegrid-outbound.io; dmarc=pass header.from=scalegrid-outbound.io
+From: "Tyler Brooks" <tyler@scalegrid-outbound.io>
+To: jaswanth@company.com
+Subject: Quick question, Jaswanth
+Date: Mon, 14 Sep 2026 09:00:00 +0000
+List-Unsubscribe: <https://scalegrid-outbound.io/u/8821>
+Content-Type: text/plain; charset=utf-8
+
+Hi Jaswanth,
+
+Noticed you're heading up security tooling at Company. Most teams your size
+are drowning in alert triage.
+
+We cut triage time 40% for teams like yours. Worth a quick 15 minute call
+next Tuesday or Wednesday?
+
+If not, no worries - just let me know and I'll close the loop.
+
+Tyler
+ScaleGrid | Book a demo: https://scalegrid-outbound.io/demo
+Unsubscribe: https://scalegrid-outbound.io/u/8821

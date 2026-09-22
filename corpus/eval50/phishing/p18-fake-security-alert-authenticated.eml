@@ -1,0 +1,19 @@
+Return-Path: <alerts@account-security-notice.com>
+Received: from mail.account-security-notice.com ([104.21.55.201]) by mx.company.com with ESMTPS id r9; Sat, 19 Sep 2026 11:00:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=account-security-notice.com; dkim=pass header.d=account-security-notice.com; dmarc=pass header.from=account-security-notice.com
+DKIM-Signature: v=1; a=rsa-sha256; d=account-security-notice.com; s=s1; h=From:Subject
+From: "Apple Support" <alerts@account-security-notice.com>
+To: jaswanth@company.com
+Subject: Your Apple ID was used to sign in on a new device
+Date: Sat, 19 Sep 2026 11:00:00 +0000
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Your Apple ID was used to sign in to iCloud on a MacBook Pro in Kyiv,
+Ukraine on 3 October 2026.</p>
+<p>If this was not you, your account may be compromised. Secure it now:</p>
+<p><a href="https://account-security-notice.com/appleid/verify">Verify my Apple ID</a></p>
+<p>You will need to confirm your Apple ID password and the security questions
+on file.</p>
+<p>Apple Support</p>
+</body></html>

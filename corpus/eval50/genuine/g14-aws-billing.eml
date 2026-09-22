@@ -1,0 +1,21 @@
+Return-Path: <no-reply-aws@amazon.com>
+Received: from mx1.amazon.com (mx1.amazon.com [203.0.113.3]) by mx.company.com with ESMTPS id x3; Mon, 14 Sep 2026 09:03:00 +0000
+Received: from app.amazon.com by mx1.amazon.com; Mon, 14 Sep 2026 09:03:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=amazon.com; dkim=pass header.d=amazon.com; dmarc=pass header.from=amazon.com
+From: "AWS Billing" <no-reply-aws@amazon.com>
+To: jaswanth@company.com
+Subject: Your AWS bill for August 2026 is available
+Date: Tue, 02 Sep 2026 03:00:00 +0000
+Message-ID: <aws.bill.202608@amazon.com>
+Content-Type: text/plain; charset=utf-8
+
+Greetings from Amazon Web Services,
+
+Your invoice for the billing period 01 Aug - 31 Aug 2026 is now available.
+
+  Total: USD 412.88
+
+View it in the Billing console:
+https://console.aws.amazon.com/billing/home#/bills
+
+Amazon Web Services, Inc.

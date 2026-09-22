@@ -1,0 +1,31 @@
+Return-Path: <marcus@growthpipeline-saas.io>
+Received: from mail.growthpipeline-saas.io (mail.growthpipeline-saas.io [159.89.44.20]) by mx.company.com with ESMTPS id 2ks9; Wed, 17 Sep 2026 09:05:30 +0000
+Received: from outreach-worker-2.growthpipeline-saas.io by mail.growthpipeline-saas.io; Wed, 17 Sep 2026 09:05:28 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=growthpipeline-saas.io; dkim=pass header.d=growthpipeline-saas.io; dmarc=pass header.from=growthpipeline-saas.io
+From: "Marcus Webb" <marcus@growthpipeline-saas.io>
+To: jaswanth@company.com
+Subject: Quick question about your security tooling
+Date: Wed, 17 Sep 2026 09:05:25 +0000
+Message-ID: <outreach.5521@growthpipeline-saas.io>
+List-Unsubscribe: <https://growthpipeline-saas.io/unsubscribe?c=5521>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Jaswanth,
+
+I noticed your team has been expanding its security function and thought this
+might be relevant.
+
+We help security teams cut triage time by about 40% by consolidating alerts
+into a single queue. Companies like Nexora and Bright Financial use us.
+
+Would you be open to a 15 minute call next week to see if it is a fit?
+
+If not, no problem at all - just let me know and I will close the loop.
+
+Best,
+Marcus Webb
+Growth Pipeline
+https://growthpipeline-saas.io
+
+Unsubscribe: https://growthpipeline-saas.io/unsubscribe?c=5521

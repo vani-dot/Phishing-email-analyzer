@@ -1,0 +1,31 @@
+Return-Path: <accounts@bright-financial.co>
+Received: from mail.bright-financial.co ([45.129.88.19]) by mx.company.com with ESMTP id c3; Wed, 16 Sep 2026 10:15:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=bright-financial.co; dkim=pass header.d=bright-financial.co; dmarc=pass header.from=bright-financial.co
+From: "Bright Financial Accounts" <accounts@bright-financial.co>
+Reply-To: <accounts@bright-financial.co>
+To: finance@company.com
+Subject: Re: Invoice BF-4471 - updated remittance details
+Date: Wed, 16 Sep 2026 10:15:00 +0000
+Message-ID: <bf.4471.2@bright-financial.co>
+In-Reply-To: <bf.4471@bright-financial.com>
+References: <bf.4471@bright-financial.com>
+Content-Type: text/plain; charset=utf-8
+
+Hello,
+
+Following up on invoice BF-4471 for 340,000 INR which is due this Friday.
+
+Please note we have changed our banking provider. Kindly update your records
+and send this payment to the new account below rather than the old one:
+
+  Account name: Bright Financial Services
+  Account number: 50100447128834
+  IFSC: KKBK0008812
+  Bank: Kotak Mahindra
+
+Apologies for the short notice. Please confirm once the payment has been
+released so we can close the month.
+
+Regards,
+Accounts Receivable
+Bright Financial

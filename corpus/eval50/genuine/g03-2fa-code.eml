@@ -1,0 +1,18 @@
+Return-Path: <security@accounts.google.com>
+Received: from mx1.google.com (mx1.google.com [203.0.113.3]) by mx.company.com with ESMTPS id x3; Mon, 14 Sep 2026 09:03:00 +0000
+Received: from app.google.com by mx1.google.com; Mon, 14 Sep 2026 09:03:00 +0000
+Received: from localhost by app.google.com; Mon, 14 Sep 2026 09:03:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=google.com; dkim=pass header.d=google.com; dmarc=pass header.from=google.com
+From: "Google" <no-reply@accounts.google.com>
+To: jaswanth@company.com
+Subject: Your Google verification code is 481920
+Date: Sat, 12 Sep 2026 14:22:11 +0000
+Message-ID: <2fa.481920@accounts.google.com>
+Content-Type: text/plain; charset=utf-8
+
+Your verification code is 481920.
+
+Google will never ask you for this code. If you did not request it, someone
+may be trying to access your account - change your password.
+
+Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA

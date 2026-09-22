@@ -1,0 +1,19 @@
+Return-Path: <alerts@onlinesbi.co.in.secure-verify.top>
+Received: from secure-verify.top ([103.85.24.77]) by mx.company.com with ESMTP id e5; Fri, 18 Sep 2026 05:20:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=secure-verify.top; dkim=none; dmarc=fail
+From: "SBI Alerts" <alerts@onlinesbi.co.in.secure-verify.top>
+To: jaswanth@company.com
+Subject: Dear Customer your debit card has been blocked
+Date: Fri, 18 Sep 2026 05:20:00 +0000
+X-Mailer: PHPMailer 5.2.22
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Dear Customer,</p>
+<p>Your SBI debit card ending 4412 has been temporarily blocked due to a
+suspicious transaction of Rs 48,900 at an online merchant.</p>
+<p>To unblock, confirm your identity within 12 hours:</p>
+<p><a href="http://onlinesbi.co.in.secure-verify.top/unblock">Unblock my card</a></p>
+<p>You will need your card number, expiry, CVV and ATM PIN to complete
+verification.</p>
+</body></html>

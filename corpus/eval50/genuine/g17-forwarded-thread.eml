@@ -1,0 +1,26 @@
+Return-Path: <arjun.nair@company.com>
+Received: from mail.company.com by mx.company.com with ESMTP id w2; Mon, 14 Sep 2026 15:40:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=company.com; dkim=pass header.d=company.com; dmarc=pass header.from=company.com
+From: "Arjun Nair" <arjun.nair@company.com>
+To: jaswanth@company.com
+Subject: Fwd: Vendor security questionnaire - due Friday
+Date: Mon, 14 Sep 2026 15:40:00 +0000
+Message-ID: <CAF3.1188@company.com>
+Content-Type: text/plain; charset=utf-8
+
+Can you take this one? You know the SSO setup better than I do.
+
+---------- Forwarded message ----------
+From: Compliance <compliance@bright-financial.com>
+Date: Mon, 14 Sep 2026 at 14:02
+Subject: Vendor security questionnaire - due Friday
+
+Hello,
+
+As part of our annual vendor review, please complete the attached security
+questionnaire by Friday 18 September. Questions 12-18 cover authentication
+and session management.
+
+If you need an extension, reply to this thread.
+
+Compliance Team, Bright Financial

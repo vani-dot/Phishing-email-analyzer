@@ -1,0 +1,23 @@
+Return-Path: <bounces+8821-4f2a@em8821.atlassian.com>
+Received: from o1.em8821.atlassian.com (o1.em8821.atlassian.com [168.245.44.21]) by mx.company.com with ESMTPS id 2kd4; Fri, 19 Sep 2026 09:02:31 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=em8821.atlassian.com; dkim=pass header.d=atlassian.com; dmarc=pass header.from=atlassian.com
+DKIM-Signature: v=1; a=rsa-sha256; d=atlassian.com; s=s1; c=relaxed/relaxed; h=From:Subject:To:Date
+From: "Atlassian" <no-reply@atlassian.com>
+To: jaswanth@company.com
+Subject: Reset your Atlassian account password
+Date: Fri, 19 Sep 2026 09:02:28 +0000
+Message-ID: <01000192b8.4f2a@em8821.atlassian.com>
+X-Mailer: SendGrid
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Hi Jaswanth,</p>
+<p>We received a request to reset the password for your Atlassian account
+(jaswanth@company.com).</p>
+<p><a href="https://id.atlassian.com/login/resetpassword?token=a9f2c81b4d7e6350">Reset your password</a></p>
+<p>This link expires in 60 minutes. If you did not request a password reset,
+you can safely ignore this email - your password will not change.</p>
+<p>For help, visit <a href="https://support.atlassian.com">Atlassian Support</a>.</p>
+<p>Thanks,<br>The Atlassian Team</p>
+</body></html>

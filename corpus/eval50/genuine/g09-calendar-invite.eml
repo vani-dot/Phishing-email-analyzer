@@ -1,0 +1,22 @@
+Return-Path: <calendar-notification@google.com>
+Received: from mail-yb1.google.com (mail-yb1.google.com [209.85.219.41]) by mx.company.com with ESMTPS id c4; Mon, 14 Sep 2026 07:00:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=google.com; dkim=pass header.d=google.com; dmarc=pass header.from=google.com
+From: "Priya Raman" <calendar-notification@google.com>
+To: jaswanth@company.com
+Subject: Invitation: Quarterly security review @ Thu 18 Sep 2026 3pm - 4pm (IST)
+Date: Mon, 14 Sep 2026 07:00:00 +0000
+Message-ID: <cal.88213@google.com>
+Content-Type: text/plain; charset=utf-8
+
+You have been invited to the following event.
+
+Quarterly security review
+Thursday 18 September 2026, 3:00pm - 4:00pm (IST)
+Meeting room 4 / Google Meet
+
+Organiser: priya.raman@company.com
+Guests: jaswanth@company.com, arjun.nair@company.com
+
+Agenda: pen test findings, the rate limiter issue, Q4 roadmap.
+
+https://calendar.google.com/calendar/event?eid=ODgyMTM

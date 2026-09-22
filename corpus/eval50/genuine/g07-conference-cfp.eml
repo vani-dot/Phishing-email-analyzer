@@ -1,0 +1,20 @@
+Return-Path: <bounce-md_44@mandrillapp.com>
+Received: from mx1.nullcon.net (mx1.nullcon.net [203.0.113.7]) by mx.company.com with ESMTPS id x7; Mon, 14 Sep 2026 09:07:00 +0000
+Received: from app.nullcon.net by mx1.nullcon.net; Mon, 14 Sep 2026 09:07:00 +0000
+Received: from localhost by app.nullcon.net; Mon, 14 Sep 2026 09:07:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=nullcon.net; dkim=pass header.d=nullcon.net; dmarc=pass header.from=nullcon.net
+From: "Nullcon CFP" <cfp@nullcon.net>
+To: jaswanth@company.com
+Subject: Your talk submission has been received
+Date: Thu, 10 Sep 2026 12:00:00 +0000
+Message-ID: <cfp.7781@nullcon.net>
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Hi Jaswanth,</p>
+<p>We have received your submission "Building a phishing analyser that does not
+cry wolf". The review panel meets on 28 September and you will hear back by
+5 October.</p>
+<p><a href="https://mandrillapp.com/track/click/44/nullcon.net?p=eyJzIjoic3RhdHVzIn0">Check your submission status</a></p>
+<p>Thanks for submitting.</p>
+</body></html>

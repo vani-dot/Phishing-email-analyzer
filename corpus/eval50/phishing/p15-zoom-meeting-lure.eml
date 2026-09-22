@@ -1,0 +1,17 @@
+Return-Path: <invite@zoom-meeting-join.work>
+Received: from zoom-meeting-join.work ([45.129.88.55]) by mx.company.com with ESMTP id o6; Wed, 16 Sep 2026 10:00:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=zoom-meeting-join.work; dkim=none; dmarc=fail
+From: "Zoom" <invite@zoom-meeting-join.work>
+To: jaswanth@company.com
+Subject: Ravi Venkatesan has invited you to a scheduled meeting - starts in 10 minutes
+Date: Wed, 16 Sep 2026 10:00:00 +0000
+X-Priority: 1
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Ravi Venkatesan is inviting you to a scheduled Zoom meeting.</p>
+<p><b>Topic: Urgent - Q4 headcount decisions</b><br>
+Time: starting in 10 minutes</p>
+<p><a href="http://zoom-meeting-join.work/j/88213409">https://company.zoom.us/j/88213409</a></p>
+<p>You must sign in with your work email to join this private meeting.</p>
+</body></html>

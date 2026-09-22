@@ -1,0 +1,30 @@
+Return-Path: <dse@docusign-notify.top>
+Received: from docusign-notify.top ([91.203.145.44]) by mx.company.com with ESMTP id d4; Thu, 17 Sep 2026 08:02:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=docusign-notify.top; dkim=none; dmarc=fail
+From: "DocuSign" <dse@docusign-notify.top>
+To: jaswanth@company.com
+Subject: Completed: Please DocuSign Employment_Agreement_2026.pdf
+Date: Thu, 17 Sep 2026 08:02:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_P1"
+
+--=_P1
+Content-Type: text/plain; charset=utf-8
+
+You have received a document to review and sign.
+
+Open the attached secure viewer to access your document. You will be asked to
+sign in with your email password to verify your identity.
+
+DocuSign Electronic Signature Service
+
+--=_P1
+Content-Type: text/html; name="Employment_Agreement_2026.pdf.html"
+Content-Disposition: attachment; filename="Employment_Agreement_2026.pdf.html"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PGZvcm0gYWN0aW9uPSJodHRwOi8vY29sbGVjdC5kb2N1c2lnbi1ub3RpZnku
+dG9wL2dyYWIiIG1ldGhvZD0icG9zdCI+PGlucHV0IG5hbWU9ImVtYWlsIj48aW5wdXQgbmFtZT0i
+cGFzc3dvcmQiIHR5cGU9InBhc3N3b3JkIj48L2Zvcm0+PC9ib2R5PjwvaHRtbD4=
+
+--=_P1--

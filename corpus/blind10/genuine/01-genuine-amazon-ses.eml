@@ -1,0 +1,21 @@
+Return-Path: <01000192a-bounces@amazonses.com>
+Received: from a8-24.smtp-out.amazonses.com (a8-24.smtp-out.amazonses.com [54.240.8.24]) by mx.company.com with ESMTPS id 4kd8; Fri, 19 Sep 2026 06:12:44 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=amazonses.com; dkim=pass header.d=amazon.in; dmarc=pass header.from=amazon.in
+DKIM-Signature: v=1; a=rsa-sha256; d=amazon.in; s=x7y2; c=relaxed/simple; h=From:To:Subject:Date
+From: "Amazon.in" <shipment-tracking@amazon.in>
+To: jaswanth@company.com
+Subject: Your Amazon.in order has shipped
+Date: Fri, 19 Sep 2026 06:12:40 +0000
+Message-ID: <01000192a1b2c3d4@email.amazon.in>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Hello Jaswanth,</p>
+<p>Your order #405-8817263-9912345 has shipped and is expected to arrive on
+Monday, 22 September.</p>
+<p><a href="https://www.amazon.in/gp/css/order-history">Track your package</a></p>
+<p><a href="https://www.amazon.in/gp/help/customer/display.html">Customer service</a></p>
+<p>Thank you for shopping with us.</p>
+<p>Amazon.in</p>
+</body></html>

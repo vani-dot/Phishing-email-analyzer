@@ -1,0 +1,84 @@
+================================================================================
+  PHISHING EMAIL ANALYZER
+  Read this first. Full instructions are in SETUP.md
+================================================================================
+
+WHAT IT DOES
+  You give it an email. It tells you whether it is phishing, spam, suspicious
+  or genuine, and explains why in writing.
+
+
+GET IT RUNNING (about 2 minutes)
+
+  1. Open a terminal in this folder.
+
+  2. Create a virtual environment:
+
+       macOS / Linux        python3 -m venv .venv
+                            source .venv/bin/activate
+
+       Windows PowerShell   python -m venv .venv
+                            .\.venv\Scripts\Activate.ps1
+
+  3. Install the packages:
+
+       pip install -r requirements.txt
+
+  4. Start it:
+
+       python app.py
+
+  5. Open http://127.0.0.1:8000 in your browser.
+
+       Username:  Vani
+       Password:  Vani
+
+  6. Go to the Analyzer tab, click one of the sample buttons, press Analyse.
+
+  To stop it, press Ctrl+C in the terminal.
+
+
+IT WORKS WITHOUT AN API KEY
+  Out of the box it runs on its rules engine alone: completely offline, and
+  the same email always gives the same answer. That is a real mode, not a
+  broken one.
+
+  Adding a free AI key makes it better at subtle attacks. See section 6 of
+  SETUP.md - it takes about 3 minutes and Groq's free tier is enough.
+
+
+IMPORTANT
+  * No API keys are included in this package. If you want the AI layer, get
+    your own free key (SETUP.md section 6). Never accept a key pasted into
+    chat or email - generate your own.
+
+  * The password Vani/Vani is written in this file, so keep the server on
+    127.0.0.1 (the default). Do not put it on a network without changing the
+    password first: Users -> Vani -> Reset password.
+
+  * It never opens or runs attachments, and never renders email HTML in your
+    browser. Analysing a malicious email cannot infect you.
+
+
+IF SOMETHING GOES WRONG
+  Section 10 of SETUP.md covers the common problems. The two most likely:
+
+    "No module named 'fastapi'"   -> the virtual environment is not active,
+                                     redo step 2 then step 3
+
+    "Address already in use"      -> something else is on port 8000, run
+                                     PEA_PORT=8001 python app.py
+
+
+WHAT ELSE IS HERE
+  SETUP.md      full setup, configuration and usage guide
+  README.md     how the analyser works and why it is built this way
+  samples/      7 example emails to try
+  corpus/       60 labelled emails for measuring accuracy
+
+  Command line:     python main.py suspicious.eml -v
+  Check it works:   pip install -r requirements-dev.txt
+                    ./selfcheck.sh      (or: python -m pytest tests/ -q)
+  Measure it:       python regression.py
+
+================================================================================

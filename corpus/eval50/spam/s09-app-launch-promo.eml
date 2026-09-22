@@ -1,0 +1,24 @@
+Return-Path: <hello@focusflow.app>
+Received: from mail.focusflow.app ([203.0.113.80]) by mx.company.com with ESMTPS id s9; Thu, 10 Sep 2026 10:00:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=focusflow.app; dkim=pass header.d=focusflow.app; dmarc=pass header.from=focusflow.app
+From: "FocusFlow" <hello@focusflow.app>
+To: jaswanth@company.com
+Subject: We just launched on Product Hunt - would love your support
+Date: Thu, 10 Sep 2026 10:00:00 +0000
+List-Unsubscribe: <https://focusflow.app/unsubscribe>
+Content-Type: text/plain; charset=utf-8
+
+Hey,
+
+We just launched FocusFlow on Product Hunt today - a distraction blocker that
+actually understands context switching.
+
+If it sounds useful, an upvote would mean a lot to our small team:
+https://www.producthunt.com/posts/focusflow
+
+Free for the first 1000 users. No credit card needed.
+
+Thanks for reading,
+The FocusFlow team
+
+Unsubscribe: https://focusflow.app/unsubscribe

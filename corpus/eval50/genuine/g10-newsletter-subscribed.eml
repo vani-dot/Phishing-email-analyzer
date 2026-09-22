@@ -1,0 +1,24 @@
+Return-Path: <bounce@tldrnewsletter.com>
+Received: from mx1.tldrnewsletter.com (mx1.tldrnewsletter.com [203.0.113.8]) by mx.company.com with ESMTPS id x8; Mon, 14 Sep 2026 09:08:00 +0000
+Received: from app.tldrnewsletter.com by mx1.tldrnewsletter.com; Mon, 14 Sep 2026 09:08:00 +0000
+Received: from localhost by app.tldrnewsletter.com; Mon, 14 Sep 2026 09:08:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=tldrnewsletter.com; dkim=pass header.d=tldrnewsletter.com; dmarc=pass header.from=tldrnewsletter.com
+From: "TLDR Security" <dan@tldrnewsletter.com>
+To: jaswanth@company.com
+Subject: TLDR Sec: Supply chain attacks, eBPF detection, and a CVE roundup
+Date: Tue, 15 Sep 2026 06:00:00 +0000
+Message-ID: <tldr.20260915@tldrnewsletter.com>
+List-Unsubscribe: <https://tldrnewsletter.com/unsubscribe?id=88213>
+List-Id: TLDR Security <sec.tldrnewsletter.com>
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<h2>TLDR Security 15 September</h2>
+<p><b>Supply chain attack on a popular npm package (4 minute read)</b><br>
+Maintainer account compromised via a phished 2FA code.
+<a href="https://tldrnewsletter.com/l/abc123">Read more</a></p>
+<p><b>Detecting container escapes with eBPF (6 minute read)</b><br>
+<a href="https://tldrnewsletter.com/l/def456">Read more</a></p>
+<p>You are receiving this because you subscribed at tldrsec.com.
+<a href="https://tldrnewsletter.com/unsubscribe?id=88213">Unsubscribe</a></p>
+</body></html>

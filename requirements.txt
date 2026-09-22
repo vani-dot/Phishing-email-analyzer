@@ -1,0 +1,18 @@
+# Phishing Email Analyzer — runtime dependencies.
+#
+# Seven packages. Everything else in this project is the Python standard
+# library: email, sqlite3, hashlib, secrets, hmac, ipaddress, difflib, re.
+#
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+fastapi>=0.110          # API + request validation
+uvicorn[standard]>=0.27 # ASGI server
+pydantic>=2.6           # schemas: rules -> LLM -> API -> DB, one model
+python-multipart>=0.0.9 # file upload parsing (FastAPI needs it for forms)
+python-dotenv>=1.0      # secrets out of the source tree
+tldextract>=5.1         # correct domain/subdomain/TLD splitting
+beautifulsoup4>=4.12    # link extraction from HTML bodies
+requests>=2.31          # redirect-chain expansion + the LLM call
+dnspython>=2.6           # SPF/DMARC record lookups
+argon2-cffi>=23.1        # Argon2id password hashing (memory-hard KDF)

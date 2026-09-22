@@ -1,0 +1,23 @@
+Return-Path: <support@ledger-wallet-verify.su>
+Received: from ledger-wallet-verify.su ([91.201.52.44]) by mx.company.com with ESMTP id l3; Sun, 13 Sep 2026 18:00:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=ledger-wallet-verify.su; dkim=none; dmarc=fail
+From: "Ledger Support" <support@ledger-wallet-verify.su>
+To: jaswanth@company.com
+Subject: Critical security update required for your Ledger device
+Date: Sun, 13 Sep 2026 18:00:00 +0000
+Content-Type: text/plain; charset=utf-8
+
+Dear Ledger user,
+
+Following the data breach disclosed last week, all devices must be
+re-synchronised with the new firmware to protect your assets.
+
+Start the re-synchronisation here:
+http://ledger-wallet-verify.su/sync
+
+You will be asked to enter your 24-word recovery phrase to restore your
+wallet to the secure firmware. This is the only way to verify ownership.
+
+Do not delay - unsynchronised wallets will be locked after 48 hours.
+
+Ledger Support Team

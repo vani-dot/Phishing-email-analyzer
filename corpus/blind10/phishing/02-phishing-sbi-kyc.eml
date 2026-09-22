@@ -1,0 +1,25 @@
+Return-Path: <alert@sbi-kyc-verification.in>
+Received: from sbi-kyc-verification.in (sbi-kyc-verification.in [103.85.24.19]) by mx.company.com with ESMTP id 7jd2; Thu, 18 Sep 2026 04:22:11 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=sbi-kyc-verification.in; dkim=none; dmarc=fail header.from=sbi-kyc-verification.in
+From: "SBI Online Banking" <alert@sbi-kyc-verification.in>
+Reply-To: <kyc.desk@mail.ru>
+To: jaswanth@company.com
+Subject: URGENT: Your SBI account will be blocked - complete KYC today
+Date: Thu, 18 Sep 2026 04:22:08 +0000
+Message-ID: <kyc.99213@sbi-kyc-verification.in>
+X-Priority: 1
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Dear Customer,</p>
+<p>Your SBI net banking account has been temporarily suspended because your KYC
+documents are not updated. Your account will be permanently blocked within 24
+hours unless you verify your identity now.</p>
+<p><a href="http://sbi-kyc-verification.in/netbanking/login">https://onlinesbi.sbi/login</a></p>
+<p>You must confirm the following to reactivate your account:</p>
+<p>Account number, registered mobile number, debit card number, ATM PIN and
+your net banking password.</p>
+<p>Failure to comply will result in permanent suspension of your account.</p>
+<p>State Bank of India</p>
+</body></html>

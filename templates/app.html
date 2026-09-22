@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Phishing Email Analyzer</title>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#4f8cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+      Analyzer
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-view="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect>
+          <rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect>
+        </svg><span>Dashboard</span>
+      </button>
+      <button class="nav-item" data-view="analyzer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path>
+        </svg><span>Analyzer</span>
+      </button>
+      <button class="nav-item" data-view="history">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v5h5"></path><path d="M3.05 13A9 9 0 106 5.3L3 8"></path><path d="M12 7v5l4 2"></path>
+        </svg><span>History</span>
+      </button>
+      <button class="nav-item" data-view="users" id="nav-users" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path>
+        </svg><span>Users</span>
+      </button>
+      <button class="nav-item" data-view="audit" id="nav-audit" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+          <path d="M14 2v6h6"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>
+        </svg><span>Audit</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="user-chip">
+        <div class="avatar" id="avatar">?</div>
+        <div class="user-meta">
+          <div class="user-name" id="user-name">…</div>
+          <div class="user-role" id="user-role"></div>
+        </div>
+      </div>
+      <button class="btn btn-sm btn-block" id="logout">Sign out</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1 id="page-title">Dashboard</h1>
+      <div class="topbar-right">
+        <span class="badge badge-info" id="mode-badge">rules-only</span>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- ============ DASHBOARD ============ -->
+      <section class="view" id="view-dashboard">
+        <div class="flex-between mb-12">
+          <div></div>
+          <div class="gap-8">
+            <select id="dash-scope" hidden>
+              <option value="mine">My analyses</option>
+              <option value="all">All users</option>
+            </select>
+          </div>
+        </div>
+        <div class="stat-grid" id="stat-grid"></div>
+        <div class="grid-2">
+          <div class="panel">
+            <div class="panel-title">Verdict distribution</div>
+            <div id="verdict-bars"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-title">Last 14 days</div>
+            <div id="trend-chart"></div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="panel">
+            <div class="panel-title">Most frequent findings</div>
+            <div id="top-signals"></div>
+          </div>
+          <div class="panel">
+            <div class="panel-title">Recent analyses</div>
+            <div id="recent-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ANALYZER ============ -->
+      <section class="view" id="view-analyzer" hidden>
+        <div class="panel">
+          <div class="tabs">
+            <button class="tab active" data-tab="paste">Paste message</button>
+            <button class="tab" data-tab="upload">Upload file</button>
+          </div>
+
+          <div id="tab-paste">
+            <div class="field">
+              <label for="email-input">Email source</label>
+              <textarea id="email-input" spellcheck="false" placeholder="Paste the complete email here, including headers.
+
+From: sender@example.com
+To: you@example.com
+Subject: ...
+Authentication-Results: ...
+
+Message body, links and all.
+
+A body on its own also works — header checks are then skipped and the report says so."></textarea>
+              <p class="hint">Headers give the strongest evidence. In most mail clients: <em>Show original</em>, <em>View source</em> or <em>Show all headers</em>.</p>
+            </div>
+          </div>
+
+          <div id="tab-upload" hidden>
+            <div class="drop-zone" id="drop-zone" tabindex="0" role="button" aria-label="Choose a file to analyse">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path>
+                <path d="M7 10l5-5 5 5"></path><path d="M12 5v12"></path>
+              </svg>
+              <div class="drop-title">Drop a file here, or click to choose</div>
+              <div class="drop-sub">.eml, .txt, .md, .msg, .mbox — up to 2 MB</div>
+            </div>
+            <input type="file" id="file-input" accept=".eml,.txt,.md,.msg,.mbox,.email" hidden>
+            <div id="file-chosen"></div>
+          </div>
+
+          <div class="analyzer-actions">
+            <button class="btn btn-primary" id="analyze-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path>
+              </svg>
+              Analyse
+            </button>
+            <button class="btn" id="clear-btn">Clear</button>
+            <label class="toggle"><input type="checkbox" id="use-llm" checked> Use AI layer</label>
+            <label class="toggle" id="network-toggle" hidden><input type="checkbox" id="use-network"> Expand links (network)</label>
+          </div>
+
+          <div class="sample-bar" id="sample-bar"></div>
+        </div>
+
+        <div class="alert alert-error" id="analyze-error" hidden></div>
+        <div id="results"></div>
+      </section>
+
+      <!-- ============ HISTORY ============ -->
+      <section class="view" id="view-history" hidden>
+        <div class="panel">
+          <div class="filters">
+            <div class="field">
+              <label for="hist-search">Search</label>
+              <input type="search" id="hist-search" placeholder="Subject or sender" maxlength="100">
+            </div>
+            <div class="field">
+              <label for="hist-verdict">Verdict</label>
+              <select id="hist-verdict">
+                <option value="">All</option>
+                <option value="PHISHING">Phishing</option>
+                <option value="SUSPICIOUS">Suspicious</option>
+                <option value="SPAM">Spam</option>
+                <option value="GENUINE">Genuine</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="hist-sort">Sort by</label>
+              <select id="hist-sort">
+                <option value="created_at">Newest</option>
+                <option value="risk_score">Risk score</option>
+                <option value="subject">Subject</option>
+              </select>
+            </div>
+            <div class="field" id="hist-scope-field" hidden>
+              <label for="hist-scope">Scope</label>
+              <select id="hist-scope">
+                <option value="mine">My analyses</option>
+                <option value="all">All users</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap"><table>
+            <thead><tr>
+              <th>When</th><th>Subject</th><th>Sender</th><th>Verdict</th>
+              <th class="cell-num">Risk</th><th class="cell-num">Findings</th><th></th>
+            </tr></thead>
+            <tbody id="history-body"></tbody>
+          </table></div>
+          <div id="history-empty"></div>
+          <div class="pager">
+            <span id="hist-count"></span>
+            <div class="pager-btns">
+              <button class="btn btn-sm" id="hist-prev">Previous</button>
+              <button class="btn btn-sm" id="hist-next">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ USERS ============ -->
+      <section class="view" id="view-users" hidden>
+        <div class="panel">
+          <div class="flex-between mb-12">
+            <div class="panel-title mt-0">Accounts</div>
+            <button class="btn btn-primary btn-sm" id="new-user-btn">New user</button>
+          </div>
+          <div class="table-wrap"><table>
+            <thead><tr>
+              <th></th><th>Username</th><th>Email</th><th>Role</th>
+              <th>Permissions</th><th>Last sign-in</th><th></th>
+            </tr></thead>
+            <tbody id="users-body"></tbody>
+          </table></div>
+        </div>
+      </section>
+
+      <!-- ============ AUDIT ============ -->
+      <section class="view" id="view-audit" hidden>
+        <div class="panel">
+          <div class="panel-title">Security event log</div>
+          <div class="table-wrap"><table>
+            <thead><tr><th>Time</th><th>Event</th><th>User</th><th>Source IP</th><th>Detail</th></tr></thead>
+            <tbody id="audit-body"></tbody>
+          </table></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<!-- user editor -->
+<div class="modal-backdrop" id="user-modal" hidden>
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title" id="user-modal-title">New user</div>
+      <button class="icon-btn" id="user-modal-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="alert alert-error" id="user-error" hidden></div>
+      <div class="field" id="username-field">
+        <label for="u-username">Username</label>
+        <input type="text" id="u-username" maxlength="32" spellcheck="false" autocomplete="off">
+        <p class="hint">3–32 characters: letters, digits, dot, underscore, hyphen.</p>
+      </div>
+      <div class="field">
+        <label for="u-email">Email <span class="hint">(optional)</span></label>
+        <input type="email" id="u-email" maxlength="255" autocomplete="off">
+      </div>
+      <div class="field" id="password-field">
+        <label for="u-password">Initial password</label>
+        <div class="gap-8">
+          <input type="text" id="u-password" maxlength="256" autocomplete="off" spellcheck="false">
+          <button class="btn btn-sm" id="gen-password">Generate</button>
+        </div>
+        <p class="hint">The user must change this at first sign-in.</p>
+      </div>
+      <div class="field">
+        <label for="u-role">Role</label>
+        <select id="u-role">
+          <option value="viewer">Viewer — read their own history</option>
+          <option value="analyst">Analyst — run and manage their own analyses</option>
+          <option value="admin">Admin — full control including user management</option>
+        </select>
+        <p class="hint">A role sets a default permission bundle. Adjust individual permissions below.</p>
+      </div>
+      <div class="field">
+        <label>Permissions</label>
+        <div class="perm-grid" id="perm-grid"></div>
+      </div>
+      <div class="field" id="active-field" hidden>
+        <label class="toggle"><input type="checkbox" id="u-active" checked> Account active</label>
+        <p class="hint">Deactivating revokes every session immediately.</p>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn" id="user-cancel">Cancel</button>
+      <button class="btn btn-primary" id="user-save">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- report viewer -->
+<div class="modal-backdrop" id="report-modal" hidden>
+  <div class="modal modal-lg">
+    <div class="modal-head">
+      <div class="modal-title">Analysis report</div>
+      <button class="icon-btn" id="report-modal-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+      </button>
+    </div>
+    <div class="modal-body" id="report-modal-body"></div>
+  </div>
+</div>
+
+<div class="toast-host" id="toasts"></div>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/render.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>

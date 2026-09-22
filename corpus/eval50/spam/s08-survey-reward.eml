@@ -1,0 +1,18 @@
+Return-Path: <rewards@consumer-panel-uk.cyou>
+Received: from bulk.consumer-panel-uk.cyou ([45.87.22.66]) by mx.company.com with ESMTP id s8; Wed, 9 Sep 2026 09:00:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=consumer-panel-uk.cyou; dkim=none; dmarc=fail
+From: "Consumer Rewards Panel" <rewards@consumer-panel-uk.cyou>
+To: undisclosed-recipients:;
+Subject: Complete our 2-minute survey and get a 100 Amazon voucher
+Date: Wed, 9 Sep 2026 09:00:00 +0000
+X-Mailer: MassSender 4.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Congratulations! You have been selected to take part in our consumer panel.</p>
+<p>Complete a 2-minute survey and receive a 100 Amazon voucher as a thank you.</p>
+<p><a href="http://consumer-panel-uk.cyou/survey/start">START THE SURVEY</a></p>
+<p>Offer valid for 48 hours only. One entry per household.</p>
+<p><a href="http://consumer-panel-uk.cyou/optout">Opt out</a></p>
+<img src="http://consumer-panel-uk.cyou/t.gif" width="1" height="1">
+</body></html>

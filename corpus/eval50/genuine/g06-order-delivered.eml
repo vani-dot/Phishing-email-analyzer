@@ -1,0 +1,19 @@
+Return-Path: <0100019b-bounce@amazonses.com>
+Received: from mx1.amazon.in (mx1.amazon.in [203.0.113.6]) by mx.company.com with ESMTPS id x6; Mon, 14 Sep 2026 09:06:00 +0000
+Received: from app.amazon.in by mx1.amazon.in; Mon, 14 Sep 2026 09:06:00 +0000
+Received: from localhost by app.amazon.in; Mon, 14 Sep 2026 09:06:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=amazon.in; dkim=pass header.d=amazon.in; dmarc=pass header.from=amazon.in
+DKIM-Signature: v=1; a=rsa-sha256; d=amazon.in; s=k1; h=From:Subject
+From: "Amazon.in" <order-update@amazon.in>
+To: jaswanth@company.com
+Subject: Delivered: Your Amazon.in order of "Mechanical Keyboard"
+Date: Wed, 09 Sep 2026 17:44:02 +0000
+Message-ID: <order.4058817@amazon.in>
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Hello Jaswanth,</p>
+<p>Your package was delivered today at 5:31 PM. It was handed to a resident.</p>
+<p><a href="https://www.amazon.in/gp/your-account/order-details?orderID=405-8817263">View order details</a></p>
+<p><a href="https://www.amazon.in/gp/help/customer/display.html">Problem with your order?</a></p>
+</body></html>

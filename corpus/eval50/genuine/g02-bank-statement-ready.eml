@@ -1,0 +1,22 @@
+Return-Path: <estatements@hdfcbank.net>
+Received: from mx1.hdfcbank.net (mx1.hdfcbank.net [203.0.113.2]) by mx.company.com with ESMTPS id x2; Mon, 14 Sep 2026 09:02:00 +0000
+Received: from app.hdfcbank.net by mx1.hdfcbank.net; Mon, 14 Sep 2026 09:02:00 +0000
+Received: from localhost by app.hdfcbank.net; Mon, 14 Sep 2026 09:02:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=hdfcbank.com; dkim=pass header.d=hdfcbank.com; dmarc=pass header.from=hdfcbank.com
+DKIM-Signature: v=1; a=rsa-sha256; d=hdfcbank.com; s=e1; h=From:To:Subject
+From: "HDFC Bank" <estatements@hdfcbank.com>
+To: jaswanth@company.com
+Subject: Your account statement for August 2026 is ready
+Date: Tue, 01 Sep 2026 06:00:00 +0000
+Message-ID: <stmt.202608.4471@hdfcbank.com>
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Dear Customer,</p>
+<p>Your account statement for the period 01 Aug 2026 to 31 Aug 2026 is now
+available in NetBanking.</p>
+<p><a href="https://netbanking.hdfcbank.com/netbanking/">Log in to NetBanking</a></p>
+<p>For security, we never ask for your password, OTP or card PIN by email or
+phone. Please do not share these with anyone.</p>
+<p>HDFC Bank</p>
+</body></html>

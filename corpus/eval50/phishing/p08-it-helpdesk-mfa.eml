@@ -1,0 +1,25 @@
+Return-Path: <itsupport@company-servicedesk.online>
+Received: from company-servicedesk.online ([104.21.55.90]) by mx.company.com with ESMTP id h8; Wed, 9 Sep 2026 14:30:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=company-servicedesk.online; dkim=none; dmarc=fail
+From: "IT Service Desk" <itsupport@company-servicedesk.online>
+Reply-To: <itsupport.desk@mail.ru>
+To: jaswanth@company.com
+Subject: Your MFA device registration expires today
+Date: Wed, 9 Sep 2026 14:30:00 +0000
+Content-Type: text/plain; charset=utf-8
+
+Hello,
+
+Our records show your multi-factor authentication device registration expires
+today. If it is not renewed you will lose access to email and VPN from
+tomorrow morning.
+
+Renew here: http://company-servicedesk.online/mfa/renew
+
+You will be asked to sign in and then approve the push notification we send.
+Please approve it - this confirms your device.
+
+If you receive more than one prompt, approve them all; the system sometimes
+retries.
+
+IT Service Desk

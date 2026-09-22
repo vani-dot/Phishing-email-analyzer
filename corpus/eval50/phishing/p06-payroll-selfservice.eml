@@ -1,0 +1,18 @@
+Return-Path: <hr-notify@company-hr-portal.xyz>
+Received: from company-hr-portal.xyz ([159.89.44.77]) by mx.company.com with ESMTP id f6; Mon, 21 Sep 2026 07:10:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=company-hr-portal.xyz; dkim=none; dmarc=fail
+From: "Company HR" <hr-notify@company-hr-portal.xyz>
+To: jaswanth@company.com
+Subject: Action required: confirm your bank details before payroll closes
+Date: Mon, 21 Sep 2026 07:10:00 +0000
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Hello,</p>
+<p>As part of our migration to a new payroll provider, all employees must
+re-confirm their salary account details in the self-service portal before
+Wednesday. Unconfirmed accounts will not be paid this cycle.</p>
+<p><a href="http://company-hr-portal.xyz/sso/login">Confirm my details</a></p>
+<p>Sign in with your work email address and password.</p>
+<p>HR Operations</p>
+</body></html>

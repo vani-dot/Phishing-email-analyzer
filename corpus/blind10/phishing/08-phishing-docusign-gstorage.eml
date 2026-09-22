@@ -1,0 +1,21 @@
+Return-Path: <notify@docu-sign-secure.cf>
+Received: from docu-sign-secure.cf (docu-sign-secure.cf [193.42.17.91]) by mx.company.com with ESMTP id 1kd9; Fri, 19 Sep 2026 08:14:55 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=docu-sign-secure.cf; dkim=none; dmarc=fail header.from=docu-sign-secure.cf
+From: "DocuSign" <notify@docu-sign-secure.cf>
+Reply-To: <docs.return@mail.ru>
+To: jaswanth@company.com
+Subject: Completed: Contract renewal awaiting your signature
+Date: Fri, 19 Sep 2026 08:14:52 +0000
+Message-ID: <ds.88112@docu-sign-secure.cf>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>You have received a document to review and sign.</p>
+<p>Sender: Finance Department<br>Document: Contract_Renewal_2026.pdf</p>
+<p><a href="https://storage.googleapis.com/ds-assets-7721/review/index.html">REVIEW DOCUMENT</a></p>
+<p>Please sign in with your email account to view this document. This link will
+expire in 48 hours.</p>
+<p>Do not share this email with anyone.</p>
+<p>DocuSign Electronic Signature Service</p>
+</body></html>

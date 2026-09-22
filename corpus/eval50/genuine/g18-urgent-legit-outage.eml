@@ -1,0 +1,24 @@
+Return-Path: <status@cloudflare.com>
+Received: from mail.cloudflare.com by mx.company.com with ESMTPS id o8; Mon, 14 Sep 2026 21:14:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=cloudflare.com; dkim=pass header.d=cloudflare.com; dmarc=pass header.from=cloudflare.com
+From: "Cloudflare Status" <status@cloudflare.com>
+To: jaswanth@company.com
+Subject: URGENT: Action required - rotate your API tokens immediately
+Date: Mon, 14 Sep 2026 21:14:00 +0000
+Message-ID: <status.99812@cloudflare.com>
+Content-Type: text/plain; charset=utf-8
+
+We are writing to inform you of a security incident affecting a subset of
+API tokens created before 1 September 2026.
+
+ACTION REQUIRED: rotate any affected tokens within 24 hours.
+
+You can rotate tokens here:
+https://dash.cloudflare.com/profile/api-tokens
+
+We have already invalidated tokens we believe were exposed. We will never
+ask you to send a token by email or to any address outside dash.cloudflare.com.
+
+Full incident report: https://blog.cloudflare.com/september-2026-token-incident/
+
+Cloudflare Security Team

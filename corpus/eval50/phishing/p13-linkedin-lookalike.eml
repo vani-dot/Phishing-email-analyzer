@@ -1,0 +1,17 @@
+Return-Path: <notify@1inkedin-messages.com>
+Received: from 1inkedin-messages.com ([104.21.55.44]) by mx.company.com with ESMTP id m4; Mon, 14 Sep 2026 08:00:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=1inkedin-messages.com; dkim=none; dmarc=fail
+From: "LinkedIn" <notify@1inkedin-messages.com>
+To: jaswanth@company.com
+Subject: You have 3 new messages and 1 job offer
+Date: Mon, 14 Sep 2026 08:00:00 +0000
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Hi Jaswanth,</p>
+<p>You have 3 unread messages, including an offer from a recruiter at a
+FAANG company.</p>
+<p><a href="http://1inkedin-messages.com/login">https://www.linkedin.com/messaging</a></p>
+<p>Sign in to read them before they expire.</p>
+<p>LinkedIn Corporation</p>
+</body></html>

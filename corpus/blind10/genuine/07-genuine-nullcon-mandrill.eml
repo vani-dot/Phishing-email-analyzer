@@ -1,0 +1,26 @@
+Return-Path: <bounce-md_31082394.68c1a9e2@mandrillapp.com>
+Received: from mail131-16.atl41.mandrillapp.com (mail131-16.atl41.mandrillapp.com [198.2.131.16]) by mx.company.com with ESMTPS id 8kf2; Thu, 18 Sep 2026 13:30:22 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=mandrillapp.com; dkim=pass header.d=nullcon.net; dkim=pass header.d=mandrillapp.com; dmarc=pass header.from=nullcon.net
+DKIM-Signature: v=1; a=rsa-sha256; d=nullcon.net; s=mandrill; c=relaxed/relaxed; h=From:Subject:To:Date
+From: "Nullcon" <registration@nullcon.net>
+To: jaswanth@company.com
+Subject: Your Nullcon Goa 2026 registration - action needed before 30 September
+Date: Thu, 18 Sep 2026 13:30:20 +0000
+Message-ID: <20260918133020.31082394.68c1a9e2@nullcon.net>
+X-Mailer: Mandrill
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Hi Jaswanth,</p>
+<p>Thanks for registering for Nullcon Goa 2026.</p>
+<p>Your registration is not complete until you confirm your attendance and
+select your training track. Please do this before 30 September - after that
+date unconfirmed places are released to the waiting list.</p>
+<p><a href="https://mandrillapp.com/track/click/31082394/nullcon.net?p=eyJzIjoiY29uZmlybSIsInYiOjF9">Confirm your registration</a></p>
+<p><a href="https://mandrillapp.com/track/click/31082394/nullcon.net?p=eyJzIjoidHJhaW5pbmciLCJ2IjoxfQ">Choose your training track</a></p>
+<p><a href="https://mandrillapp.com/track/click/31082394/nullcon.net?p=eyJzIjoic2NoZWR1bGUiLCJ2IjoxfQ">View the schedule</a></p>
+<p>If you have questions, reply to this email and the team will help.</p>
+<p>See you in Goa,<br>The Nullcon Team</p>
+<img src="https://mandrillapp.com/track/open.php?u=31082394&id=68c1a9e2" width="1" height="1">
+</body></html>

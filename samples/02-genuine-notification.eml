@@ -1,0 +1,29 @@
+Return-Path: <noreply@github.com>
+Received: from out-24.smtp.github.com (out-24.smtp.github.com [192.30.252.206]) by mx.google.com with ESMTPS id k12si; Thu, 18 Sep 2026 09:41:12 +0000
+Received: from github-lowworker-58a1c6d.va3-iad.github.net by smtp.github.com; Thu, 18 Sep 2026 09:41:11 +0000
+Received: from localhost by github-lowworker-58a1c6d.va3-iad.github.net; Thu, 18 Sep 2026 09:41:11 +0000
+Authentication-Results: mx.google.com; spf=pass smtp.mailfrom=github.com; dkim=pass header.d=github.com; dmarc=pass header.from=github.com
+From: GitHub <noreply@github.com>
+Reply-To: GitHub <noreply@github.com>
+To: jaswanth@company.com
+Subject: [GitHub] A third-party OAuth application has been added to your account
+Date: Thu, 18 Sep 2026 09:41:10 +0000
+Message-ID: <github/notification/8f2a1b@github.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hey jaswanth,
+
+A third-party OAuth application (Vercel) with repo and read:org scopes was
+recently authorized to access your account.
+
+Visit https://github.com/settings/connections/applications for more information.
+
+To see this and other security events for your account, visit
+https://github.com/settings/security-log
+
+If you run into problems, please contact support by visiting
+https://github.com/contact
+
+Thanks,
+The GitHub Team

@@ -1,0 +1,25 @@
+Return-Path: <priya.raman@company.com>
+Received: from mail.company.com (mail.company.com [10.4.2.8]) by mx.company.com with ESMTP id 9dk2; Fri, 19 Sep 2026 11:40:02 +0000
+Received: from desktop-pr4.internal.company.com by mail.company.com; Fri, 19 Sep 2026 11:40:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=company.com; dkim=pass header.d=company.com; dmarc=pass header.from=company.com
+From: "Priya Raman" <priya.raman@company.com>
+To: jaswanth@company.com
+Cc: dev-team@company.com
+Subject: Re: Staging deploy for the auth refactor
+Date: Fri, 19 Sep 2026 11:40:00 +0000
+Message-ID: <CAF9x2.8821@company.com>
+In-Reply-To: <CAF9x2.8819@company.com>
+References: <CAF9x2.8817@company.com> <CAF9x2.8819@company.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thanks for turning that around so quickly.
+
+I pulled your branch and ran it against staging - the session rotation looks
+right, and the logout path clears both cookies now. One thing I noticed: the
+integration test for expired tokens is still skipped. Worth un-skipping before
+this goes to main?
+
+Happy to pair on it this afternoon if that helps.
+
+Priya

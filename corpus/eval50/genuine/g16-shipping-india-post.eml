@@ -1,0 +1,18 @@
+Return-Path: <tracking@indiapost.gov.in>
+Received: from relay.indiapost.gov.in (relay.indiapost.gov.in [164.100.9.22]) by mx.company.com with ESMTP id p1; Fri, 11 Sep 2026 08:30:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=indiapost.gov.in; dkim=none; dmarc=none
+From: "India Post" <tracking@indiapost.gov.in>
+To: jaswanth@company.com
+Subject: Consignment EE123456789IN is out for delivery
+Date: Fri, 11 Sep 2026 08:30:00 +0000
+Message-ID: <ip.EE123456789IN@indiapost.gov.in>
+Content-Type: text/plain; charset=utf-8
+
+Dear Customer,
+
+Your consignment EE123456789IN booked at Bengaluru GPO is out for delivery
+today from Koramangala SO.
+
+Track: https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx
+
+This is an automated message. Please do not reply.

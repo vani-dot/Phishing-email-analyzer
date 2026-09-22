@@ -1,0 +1,19 @@
+Return-Path: <security@ms-authenticator-setup.buzz>
+Received: from ms-authenticator-setup.buzz ([193.42.17.22]) by mx.company.com with ESMTP id p7; Thu, 17 Sep 2026 08:00:00 +0000
+Authentication-Results: mx.company.com; spf=fail smtp.mailfrom=ms-authenticator-setup.buzz; dkim=none; dmarc=fail
+From: "Microsoft Authenticator" <security@ms-authenticator-setup.buzz>
+To: jaswanth@company.com
+Subject: Set up your authenticator app - scan the QR code
+Date: Thu, 17 Sep 2026 08:00:00 +0000
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html><body>
+<p>Your organisation now requires multi-factor authentication.</p>
+<p>Scan the QR code below with your phone camera to enrol your device. You
+must complete this within 48 hours or your account will be locked.</p>
+<p><img src="http://ms-authenticator-setup.buzz/qr/88213.png" width="200" height="200" alt="QR code"></p>
+<p>If you cannot scan, use this link instead:
+<a href="http://ms-authenticator-setup.buzz/enrol">http://ms-authenticator-setup.buzz/enrol</a></p>
+<p>You will be asked to sign in with your work credentials to complete setup.</p>
+</body></html>

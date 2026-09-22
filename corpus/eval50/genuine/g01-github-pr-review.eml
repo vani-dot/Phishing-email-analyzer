@@ -1,0 +1,23 @@
+Return-Path: <noreply@github.com>
+Received: from mx1.github.com (mx1.github.com [203.0.113.1]) by mx.company.com with ESMTPS id x1; Mon, 14 Sep 2026 09:01:00 +0000
+Received: from app.github.com by mx1.github.com; Mon, 14 Sep 2026 09:01:00 +0000
+Received: from localhost by app.github.com; Mon, 14 Sep 2026 09:01:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=github.com; dkim=pass header.d=github.com; dmarc=pass header.from=github.com
+From: "Priya Raman" <notifications@github.com>
+Reply-To: "vanitha/phish-analyzer" <reply+AAB2C3@reply.github.com>
+To: jaswanth@company.com
+Subject: Re: [vanitha/phish-analyzer] Add DKIM alignment check (PR #47)
+Date: Mon, 14 Sep 2026 09:01:00 +0000
+Message-ID: <vanitha/phish-analyzer/pull/47/review/882@github.com>
+In-Reply-To: <vanitha/phish-analyzer/pull/47@github.com>
+References: <vanitha/phish-analyzer/pull/47@github.com>
+List-Id: vanitha/phish-analyzer <phish-analyzer.vanitha.github.com>
+Content-Type: text/plain; charset=utf-8
+
+@priya-r commented on this pull request.
+
+Looks good overall. One thing - in dkim_alignment() you compare the full
+hostname rather than the registrable domain. That will treat mail.paypal.com
+as unaligned with paypal.com. Suggest running it through tldextract first.
+
+View it on GitHub: https://github.com/vanitha/phish-analyzer/pull/47#discussion_r882

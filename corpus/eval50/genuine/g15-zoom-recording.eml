@@ -1,0 +1,22 @@
+Return-Path: <no-reply@zoom.us>
+Received: from mx1.zoom.us (mx1.zoom.us [203.0.113.4]) by mx.company.com with ESMTPS id x4; Mon, 14 Sep 2026 09:04:00 +0000
+Received: from app.zoom.us by mx1.zoom.us; Mon, 14 Sep 2026 09:04:00 +0000
+Authentication-Results: mx.company.com; spf=pass smtp.mailfrom=zoom.us; dkim=pass header.d=zoom.us; dmarc=pass header.from=zoom.us
+From: "Zoom" <no-reply@zoom.us>
+To: jaswanth@company.com
+Subject: Cloud recording available: Quarterly security review
+Date: Thu, 18 Sep 2026 16:05:00 +0000
+Message-ID: <rec.88412@zoom.us>
+Content-Type: text/plain; charset=utf-8
+
+Hi Jaswanth,
+
+Your cloud recording is now available.
+
+  Topic: Quarterly security review
+  Date: 18 Sep 2026 15:00 IST
+  Duration: 58 minutes
+
+https://company.zoom.us/rec/share/aBcD3fGh1JkLmN
+
+This recording will be kept for 120 days.
